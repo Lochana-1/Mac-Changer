@@ -13,8 +13,10 @@ Features:
 Installation:
 
 $ git clone https://github.com/Lochana-1/Mac-Changer.git
+
 $ cd Mac-Changer
 
+$ python3 macchanger.py
    
 Usage:
 - The script allows you to change your MAC address quickly and easily by following a few simple commands.
