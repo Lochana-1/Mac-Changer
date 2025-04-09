@@ -12,6 +12,8 @@ Features:
 
 Installation:
 
+$ git clone https://github.com/Lochana-1/Mac-Changer.git
+$ cd Mac-Changer
 
    
 Usage:
