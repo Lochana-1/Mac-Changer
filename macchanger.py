@@ -24,9 +24,9 @@ print("Created By Lochana Manuth")
 print("[+] Changing Your Mac Address to " + int_name)
 
 print("************************************************************************************************")
-subprocess.call(["sudo" , "macchanger", int_name , "down"])
-subprocess.call(["sudo" , "macchanger", int_name ,"-m"  , new_mac])
-subprocess.call(["sudo" , "macchanger", int_name , "up"])
+subprocess.run(["sudo" , "macchanger", int_name , "down"])
+subprocess.run(["sudo" , "macchanger", int_name ,"-m"  , new_mac])
+subprocess.run(["sudo" , "macchanger", int_name , "up"])
 print("************************************************************************************************")
 
 
