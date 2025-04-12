@@ -1,7 +1,5 @@
 import subprocess
 
-new_mac  = input("Enter Your New Mac Address : ")
-int_name  = input("Enter Your Network Interface name  : ")
 
 
 
@@ -21,7 +19,10 @@ print('''
 ╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░░░░░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚══════╝╚═╝░░╚═╝''')
 print("")
 print("Created By Lochana Manuth")
-print("[+] Changing Your Mac Address to " + int_name)
+new_mac  = input("Enter Your New Mac Address : ")
+int_name  = input("Enter Your Network Interface name  : ")
+
+print("[+] Changing Your Mac Address to " + new_mac)
 
 print("************************************************************************************************")
 subprocess.run(["sudo" , "macchanger", int_name , "down"])
