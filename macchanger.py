@@ -1,5 +1,10 @@
 import subprocess
 
+new_mac  = input("Enter Your New Mac Address : ")
+int  = input("Enter Your Network Interface name  : ")
+
+
+
 print('''   
 ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░
 ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝  ╚══██╔══╝██╔══██╗
@@ -17,12 +22,14 @@ print('''
 print("")
 print("")
 print("")
-subprocess.call("sudo apt install macchanger ", shell=True)
+subprocess.call("sudo apt update && sudo apt install  macchanger" , shell=True)
 print("************************************************************************************************")
-subprocess.call("sudo macchanger -r eth0", shell=True)
+subprocess.call(["sudo" , "macchanger", int , "down"])
+subprocess.call(["sudo" , "macchanger", int ,"-m"  , new_mac])
+subprocess.call(["sudo" , "macchanger", int , "up"])
 print("************************************************************************************************")
+subprocess.call("ifconfig" , shell=True) 
 
-subprocess.call("ifconfig eth0", shell=True)
 print("")
 print("")
 print("")
