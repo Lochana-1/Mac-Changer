@@ -1,203 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mac-Changer | Project Showcase</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-light: #f9f9f9;
-      --bg-dark: #1e1e1e;
-      --text-light: #333;
-      --text-dark: #f4f4f4;
-      --primary: #3498db;
-      --card-bg-light: #fff;
-      --card-bg-dark: #2c2c2c;
-    }
+Mac-Changer
 
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background-color 0.3s, color 0.3s;
-    }
+Automate MAC address changes on Kali Linux with Python
 
-    .dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
+✨ Features
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px;
-    }
+    One-command MAC address changing
+    Random MAC generation for anonymity
+    Designed for Kali Linux
+    Beginner-friendly command-line interface
 
-    .toggle-btn {
-      float: right;
-      margin-top: 10px;
-      cursor: pointer;
-      background: var(--primary);
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
+⚙️ Installation
 
-    .project-card {
-      background-color: var(--card-bg-light);
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s;
-    }
-
-    .dark-mode .project-card {
-      background-color: var(--card-bg-dark);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 25px;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .section h3 {
-      font-size: 1.3rem;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    pre {
-      background-color: #272727;
-      color: #f1f1f1;
-      padding: 15px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-
-    a.btn {
-      display: inline-block;
-      background-color: var(--primary);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    a.btn:hover {
-      background-color: #217dbb;
-    }
-
-    .badge-icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .badge {
-      background-color: #ddd;
-      padding: 6px 12px;
-      border-radius: 12px;
-      font-size: 0.85rem;
-    }
-
-    .dark-mode .badge {
-      background-color: #444;
-      color: #fff;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .toggle-btn {
-        width: 100%;
-        margin: 10px 0;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-    <div class="project-card">
-      <h1>Mac-Changer</h1>
-      <p class="subtitle">Automate MAC address changes on Kali Linux with Python</p>
-
-      <div class="badge-icons">
-        <div class="badge">Python</div>
-        <div class="badge">CLI</div>
-        <div class="badge">Linux</div>
-        <div class="badge">Privacy</div>
-        <div class="badge">macchanger</div>
-      </div>
-
-      <div class="section">
-        <h3>✨ Features</h3>
-        <ul>
-          <li>One-command MAC address changing</li>
-          <li>Random MAC generation for anonymity</li>
-          <li>Designed for Kali Linux</li>
-          <li>Beginner-friendly command-line interface</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h3>⚙️ Installation</h3>
-        <pre>$ git clone https://github.com/Lochana-1/Mac-Changer.git
+$ git clone https://github.com/Lochana-1/Mac-Changer.git
 $ cd Mac-Changer
-$ python3 macchanger.py</pre>
-      </div>
+$ python3 macchanger.py
 
-      <div class="section">
-        <h3>🚀 Usage</h3>
-        <p>Easily change your MAC address with optional custom input. Perfect for privacy-focused users on public Wi-Fi.</p>
-      </div>
+🚀 Usage
 
-      <div class="section">
-        <h3>🤝 Contributing</h3>
-        <p>Fork the repository, create a feature branch, and submit a pull request. Contributions are welcome!</p>
-      </div>
+Easily change your MAC address with optional custom input. Perfect for privacy-focused users on public Wi-Fi.
+🤝 Contributing
 
-      <div class="section">
-        <h3>⚠️ Disclaimer</h3>
-        <p>This tool is for ethical and educational purposes only. Use it legally and responsibly.</p>
-      </div>
+Fork the repository, create a feature branch, and submit a pull request. Contributions are welcome!
+⚠️ Disclaimer
 
-      <a class="btn" href="https://github.com/Lochana-1/Mac-Changer" target="_blank">🔗 View on GitHub</a>
-    </div>
-  </div>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
-
-</body>
-</html>
+This tool is for ethical and educational purposes only. Use it legally and responsibly.
